@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login | PustakaKU Nova</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="intro">
+        <img class="intro-logo" src="logo-mark.svg" alt="Logo PustakaKU Nova" />
+        <h2>Selamat datang kembali!</h2>
+        <p>Kelola perpustakaan dengan cara yang lebih modern.</p>
+        <a href="index.html">← Kembali</a>
+      </div>
+      <form id="form">
+        <img class="form-logo" src="logo-icon.svg" alt="" />
+        <h2>Masuk ke Aplikasi</h2>
+        <label>Username<input id="user" required /></label
+        ><label>Password<input id="pass" type="password" required /></label
+        ><label
+          >Role<select id="role">
+            <option value="admin">admin</option>
+            <option value="anggota">anggota</option>
+          </select></label
+        ><button>Masuk Sekarang →</button>
+        <p id="msg"></p>
+        <div class="demo-hint">
+          <b>Belum punya akun? Pakai akun demo:</b>
+          <div class="demo-row">
+            <span>👤 Admin</span><code>admin</code> / <code>12345</code>
+          </div>
+          <div class="demo-row">
+            <span>🎓 Anggota</span><code>anggota</code> / <code>12345</code>
+          </div>
+          <p>Pilih <b>Role</b> yang sesuai dengan akun di atas sebelum masuk.</p>
+        </div>
+      </form>
+    </div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
